@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0d14" />
+    <meta name="description" content="Portfólio de uma desenvolvedora de software em formação, com projetos, habilidades e trajetória acadêmica." />
+    <title>Portfólio | Desenvolvedora de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-bar"></span></div>
+
+    <header class="site-header" id="topo">
+      <div class="header-inner">
+        <a class="brand" href="#inicio" aria-label="Portfólio, início">
+          <span class="brand-mark">&lt;<i>/</i>&gt;</span>
+          <span class="brand-name">portfólio<span>.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Navegação principal">
+          <a href="#inicio" class="nav-link is-active">Início</a>
+          <a href="#sobre" class="nav-link">Sobre mim</a>
+          <a href="#habilidades" class="nav-link">Habilidades</a>
+          <a href="#projetos" class="nav-link">Projetos</a>
+          <a href="#formacao" class="nav-link">Formação</a>
+          <a href="#contato" class="nav-link nav-contact">Contato <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Disponível para novas oportunidades</p>
+          <p class="hero-greeting">Olá, meu nome é</p>
+          <h1 id="hero-title"><span data-name>Seu nome aqui</span><span class="name-mark">.</span></h1>
+          <p class="hero-role">Desenvolvedora de Software</p>
+          <p class="hero-description">Transformando ideias em soluções digitais através da tecnologia e criatividade.</p>
+          <div class="typing-line" aria-live="polite" aria-atomic="true">
+            <span class="typing-prefix">Atualmente explorando</span>
+            <span class="typing-text" id="typing-text">desenvolvimento web</span><span class="typing-caret" aria-hidden="true"></span>
+          </div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projetos">Conheça meus projetos <span aria-hidden="true">↗</span></a>
+            <a class="button button-quiet" href="#contato">Entre em contato <span aria-hidden="true">→</span></a>
+            <button class="button button-cv" type="button" data-action="resume">Baixar currículo <span aria-hidden="true">↓</span></button>
+          </div>
+          <p class="placeholder-note"><span aria-hidden="true">✳</span> Nome e currículo são campos temporários para personalizar.</p>
+        </div>
+
+        <div class="hero-art" aria-label="Ilustração decorativa de uma janela de código" role="img">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="art-glow"></div>
+          <div class="code-window">
+            <div class="window-topbar">
+              <span class="window-dots"><i></i><i></i><i></i></span>
+              <span class="window-file">portfolio.js</span>
+              <span class="window-menu" aria-hidden="true">•••</span>
+            </div>
+            <div class="code-content" aria-hidden="true">
+              <div><span class="line-number">01</span><span class="code-purple">const</span> <span class="code-blue">developer</span> <span class="code-muted">=</span> <span class="code-yellow">{</span></div>
+              <div><span class="line-number">02</span><span class="code-cyan">  foco</span><span class="code-muted">:</span> <span class="code-green">'aprender sempre'</span><span class="code-muted">,</span></div>
+              <div><span class="line-number">03</span><span class="code-cyan">  cria</span><span class="code-muted">:</span> <span class="code-green">'com propósito'</span><span class="code-muted">,</span></div>
+              <div><span class="line-number">04</span><span class="code-cyan">  stack</span><span class="code-muted">:</span> <span class="code-yellow">[</span></div>
+              <div><span class="line-number">05</span><span class="code-green">    'HTML'</span><span class="code-muted">,</span> <span class="code-green">'CSS'</span><span class="code-muted">,</span></div>
+              <div><span class="line-number">06</span><span class="code-green">    'JavaScript'</span></div>
+              <div><span class="line-number">07</span><span class="code-yellow">  ]</span></div>
+              <div><span class="line-number">08</span><span class="code-yellow">}</span></div>
+            </div>
+            <div class="window-status"><span class="status-dot"></span> <span>construindo o próximo passo</span><span class="status-branch">main*</span></div>
+          </div>
+          <div class="floating-chip chip-top"><span>✳</span> criatividade</div>
+          <div class="floating-chip chip-bottom"><span class="chip-brackets">{ }</span> ideia → solução</div>
+          <span class="art-coordinate coordinate-top">IDEIAS → CÓDIGO</span>
+          <span class="art-coordinate coordinate-bottom">&lt;feito com intenção /&gt;</span>
+        </div>
+        <a class="scroll-cue" href="#sobre"><span class="scroll-line"></span> Role para explorar</a>
+      </section>
+
+      <section class="section-shell about-section" id="sobre" aria-labelledby="about-title">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">01 <span>/</span> SOBRE MIM</p>
+          <h2 id="about-title">Curiosidade que vira<br /><span class="text-gradient">construção.</span></h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-copy" data-reveal>
+            <p class="lead-copy">Sou Técnica em Informática e estudante de Desenvolvimento de Software Multiplataforma na FATEC.</p>
+            <p>Tenho interesse em desenvolvimento web, tecnologia e inovação. Estou constantemente aprimorando meus conhecimentos por meio de estudos e projetos práticos, buscando transformar ideias em soluções funcionais e intuitivas.</p>
+            <a class="text-link" href="#formacao">Conheça minha formação <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="about-aside" data-reveal>
+            <div class="aside-heading"><span class="aside-icon">✳</span><span>o que me move</span></div>
+            <article class="trait-card"><span class="trait-number">01</span><div><h3>Aprendizado contínuo</h3><p>Um passo de cada vez, sempre avançando.</p></div><span class="trait-arrow">↗</span></article>
+            <article class="trait-card"><span class="trait-number">02</span><div><h3>Resolução de problemas</h3><p>Entender o desafio antes de escrever código.</p></div><span class="trait-arrow">↗</span></article>
+            <article class="trait-card"><span class="trait-number">03</span><div><h3>Criatividade</h3><p>Buscar caminhos claros para boas ideias.</p></div><span class="trait-arrow">↗</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell skills-section" id="habilidades" aria-labelledby="skills-title">
+        <div class="section-heading section-heading-row" data-reveal>
+          <div><p class="section-index">02 <span>/</span> HABILIDADES</p><h2 id="skills-title">Ferramentas para<br /><span class="text-gradient">fazer acontecer.</span></h2></div>
+          <p class="section-aside-text">Tecnologias que venho estudando e aplicando na minha jornada.</p>
+        </div>
+        <div class="skills-grid" id="skills-grid"></div>
+        <p class="skills-footnote"><span aria-hidden="true">↗</span> Conhecimentos em desenvolvimento contínuo.</p>
+      </section>
+
+      <section class="projects-section" id="projetos" aria-labelledby="projects-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading-row" data-reveal>
+            <div><p class="section-index">03 <span>/</span> PROJETOS</p><h2 id="projects-title">Feito para<br /><span class="text-gradient">sair do papel.</span></h2></div>
+            <p class="section-aside-text">Ideias, estudos e experimentos que ganham forma através do código.</p>
+          </div>
+          <div class="projects-grid" id="projects-grid"></div>
+          <div class="projects-footer"><span class="project-count" id="project-count">0 projetos</span><span>Novos projetos em breve <i aria-hidden="true">✳</i></span></div>
+        </div>
+      </section>
+
+      <section class="section-shell education-section" id="formacao" aria-labelledby="education-title">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">04 <span>/</span> FORMAÇÃO</p>
+          <h2 id="education-title">Base sólida,<br /><span class="text-gradient">horizontes abertos.</span></h2>
+        </div>
+        <div class="education-layout">
+          <p class="education-intro" data-reveal>Minha jornada de aprendizado é contínua — cada etapa abre espaço para a próxima.</p>
+          <div class="education-timeline" id="education-timeline"></div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contato" aria-labelledby="contact-title">
+        <div class="section-shell contact-inner">
+          <div class="contact-copy" data-reveal>
+            <p class="section-index">05 <span>/</span> CONTATO</p>
+            <h2 id="contact-title">Vamos construir<br /><span class="text-gradient">algo juntos?</span></h2>
+            <p>Estou aberta a oportunidades, novos desafios e conexões na área de tecnologia.</p>
+            <button class="button button-primary contact-main-action" type="button" data-action="email">Entre em contato <span aria-hidden="true">↗</span></button>
+          </div>
+          <div class="contact-links" id="contact-links" data-reveal>
+            <p class="contact-links-heading">ENCONTRE-ME POR AÍ</p>
+          </div>
+          <div class="contact-decoration" aria-hidden="true">&lt;olá, mundo!<span>_</span>&gt;</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-inner">
+        <a class="brand footer-brand" href="#inicio"><span class="brand-mark">&lt;<i>/</i>&gt;</span><span class="brand-name">portfólio<span>.</span></span></a>
+        <p>Projetado e desenvolvido com <span class="footer-heart">♥</span> e curiosidade.</p>
+        <a class="back-to-top" href="#topo">Voltar ao topo <span aria-hidden="true">↑</span></a>
+        <p class="copyright">© <span id="current-year"></span> · Feito com intenção.</p>
+      </div>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
